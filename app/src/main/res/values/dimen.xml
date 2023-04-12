@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="defaultHeaderSmall">32sp</dimen>
+    <dimen name="defaultHeaderMedium">48sp</dimen>
+    <dimen name="defaultHeaderLarge">64sp</dimen>
+
+    <dimen name="defaultTextSmall">14sp</dimen>
+    <dimen name="defaultTextMedium">16sp</dimen>
+    <dimen name="defaultTextBig">18sp</dimen>
+
+    <dimen name="defaultMarginMinimum">3dp</dimen>
+    <dimen name="defaultMargin3XSmall">4dp</dimen>
+    <dimen name="defaultMargin2XSmall">6dp</dimen>
+    <dimen name="defaultMarginXSmall">8dp</dimen>
+    <dimen name="defaultMarginSmall">12dp</dimen>
+    <dimen name="defaultMarginMedium">24dp</dimen>
+    <dimen name="defaultMarginBig">36dp</dimen>
+    <dimen name="defaultMarginXBig">48dp</dimen>
+    <dimen name="defaultMargin2XBig">64dp</dimen>
+    <dimen name="defaultMargin3XBig">72dp</dimen>
+
+</resources>

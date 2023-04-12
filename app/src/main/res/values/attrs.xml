@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="defaultBackgroundColor" format="color"/>
+    <attr name="defaultStatusBarColor" format="color"/>
+    <attr name="defaultNavigationBarColor" format="color"/>
+    <attr name="defaultComponentBackgroundColor" format="color"/>
+
+    <attr name="defaultTextColor" format="color"/>
+    <attr name="defaultHeaderTextColor" format="color"/>
+    <attr name="defaultHintTextColor" format="color"/>
+    <attr name="defaultButtonTextColor" format="color"/>
+
+    <attr name="alternativeTextColor" format="color"/>
+    <attr name="alternativeHeaderTextColor" format="color"/>
+    <attr name="alternativeHintTextColor" format="color"/>
+    <attr name="alternativeButtonTextColor" format="color"/>
+
+
+</resources>

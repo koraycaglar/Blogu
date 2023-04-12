@@ -7,4 +7,29 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Default Application Colors -->
+
+    <!-- BACKGROUND -->
+    <color name="defaultBackgroundColor_Light">#FFFEFEFE</color>
+    <color name="defaultBackgroundColor_Dark">#FF313131</color>
+
+    <!-- STATUS BAR -->
+    <color name="defaultStatusBarColor_Light">#FFFEFEFE</color>
+    <color name="defaultStatusBarColor_Dark">#FF313131</color>
+
+    <!-- NAVIGATION BAR -->
+    <color name="defaultNavigationBarColor_Light">#FFFEFEFE</color>
+    <color name="defaultNavigationBarColor_Dark">#FF313131</color>
+
+    <color name="defaultComponentBackgroundColor_Light">#FFFFFFFF</color>
+    <color name="defaultComponentBackgroundColor_Dark">#FF414141</color>
+
+    <color name="defaultHeaderTextColor_Light">#FFFF6969</color>
+    <color name="defaultHeaderTextColor_Dark">#FF2B79FF</color>
+
+    <color name="defaultTextColor_Light">#FF101010</color>
+    <color name="defaultTextColor_Dark">#FFDDDDDD</color>
+
+
 </resources>

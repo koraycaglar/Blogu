@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_auth"
+    app:startDestination="@id/authHomeFragment">
+
+    <fragment
+        android:id="@+id/signupAuthFragment"
+        android:name="com.ugrcaan.blogu.SignupAuthFragment"
+        android:label="fragment_signup_auth"
+        tools:layout="@layout/fragment_signup_auth" >
+        <action
+            android:id="@+id/action_signupAuthFragment_to_signupPasswordFragment"
+            app:destination="@id/signupPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupPasswordFragment"
+        android:name="com.ugrcaan.blogu.SignupPasswordFragment"
+        android:label="fragment_signup_password"
+        tools:layout="@layout/fragment_signup_password" >
+        <action
+            android:id="@+id/action_signupPasswordFragment_to_signupCredentialsFragment"
+            app:destination="@id/signupCredentialsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupCredentialsFragment"
+        android:name="com.ugrcaan.blogu.SignupCredentialsFragment"
+        android:label="fragment_signup_credentials"
+        tools:layout="@layout/fragment_signup_credentials" />
+    <fragment
+        android:id="@+id/authHomeFragment"
+        android:name="com.ugrcaan.blogu.AuthHomeFragment"
+        android:label="fragment_auth_home"
+        tools:layout="@layout/fragment_auth_home" >
+        <action
+            android:id="@+id/action_authHomeFragment_to_signupAuthFragment"
+            app:destination="@id/signupAuthFragment" />
+        <action
+            android:id="@+id/action_authHomeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.ugrcaan.blogu.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+</navigation>

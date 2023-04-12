@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Blogu</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="auth_signup_header">Sign Up!</string>
+    <string name="auth_home_header">BLOGU</string>
+    <string name="auth_home_description">Welcome to one of the best blog experience that you will ever have!</string>
+    <string name="auth_signup_description">Signup to Blogu</string>
 </resources>
