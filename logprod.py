@@ -7,7 +7,7 @@ logging.basicConfig(filename='app.log', level=logging.DEBUG)
 @app.route('/')
 def hello():
     app.logger.info('Home page viewed')
-    return render_template('home.html')
+    return 'Home Page'
 
 @app.route('/post', methods=['POST'])
 def create_post():
