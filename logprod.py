@@ -1,13 +1,14 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, jsonify
 import logging
 
 app = Flask(__name__)
 logging.basicConfig(filename='app.log', level=logging.DEBUG)
 
-@app.route('/')
+@app.route('/', methods=['GET'])
 def hello():
     app.logger.info('Home page viewed')
-    return 'Home Page'
+    data = {'message': 'Selamin Aleykum Ugur.'}
+    return jsonify(data)
 
 @app.route('/post', methods=['POST'])
 def create_post():
@@ -15,7 +16,7 @@ def create_post():
     app.logger.info('New blog post created')
     return 'New blog post created'
 
-@app.route('/login', methods=['POST', 'GET'])
+@app.route('/login', methods=['POST'])
 def login():
     # Code to handle user login
     app.logger.info('User logged in')
