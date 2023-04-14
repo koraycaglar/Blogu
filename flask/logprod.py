@@ -6,7 +6,7 @@ import json
 app = Flask(__name__)
 logging.basicConfig(filename='app.log', level=logging.DEBUG)
 
-producer = KafkaProducer(bootstrap_servers='localhost:9092',
+producer = KafkaProducer(bootstrap_servers='broker:9092',
 			value_serializer=lambda v: json.dumps(v).encode('utf-8'))
 
 @app.route('/', methods=['GET'])
@@ -35,5 +35,5 @@ def add_comment():
     return 'New user comment added'
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run(host='0.0.0.0', port=5000)
 
