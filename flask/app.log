@@ -206,3 +206,34 @@ DEBUG:kafka.protocol.parser:Received correlation id: 7
 DEBUG:kafka.protocol.parser:Processing response MetadataResponse_v1
 DEBUG:kafka.conn:<BrokerConnection node_id=1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Response 7 (2.5501251220703125 ms): MetadataResponse_v1(brokers=[(node_id=1, host='localhost', port=9092, rack=None)], controller_id=1, topics=[(error_code=0, topic='logs', is_internal=False, partitions=[(error_code=0, partition=0, leader=1, replicas=[1], isr=[1])])])
 DEBUG:kafka.cluster:Updated cluster metadata to ClusterMetadata(brokers: 1, topics: 1, groups: 0)
+DEBUG:kafka.client:Sending metadata request MetadataRequest_v1(topics=['logs']) to node 1
+DEBUG:kafka.protocol.parser:Sending request MetadataRequest_v1(topics=['logs'])
+DEBUG:kafka.conn:<BrokerConnection node_id=1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Request 8: MetadataRequest_v1(topics=['logs'])
+DEBUG:kafka.protocol.parser:Received correlation id: 8
+DEBUG:kafka.protocol.parser:Processing response MetadataResponse_v1
+DEBUG:kafka.conn:<BrokerConnection node_id=1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Response 8 (2.797842025756836 ms): MetadataResponse_v1(brokers=[(node_id=1, host='localhost', port=9092, rack=None)], controller_id=1, topics=[(error_code=0, topic='logs', is_internal=False, partitions=[(error_code=0, partition=0, leader=1, replicas=[1], isr=[1])])])
+DEBUG:kafka.cluster:Updated cluster metadata to ClusterMetadata(brokers: 1, topics: 1, groups: 0)
+DEBUG:kafka.client:Sending metadata request MetadataRequest_v1(topics=['logs']) to node 1
+DEBUG:kafka.protocol.parser:Sending request MetadataRequest_v1(topics=['logs'])
+DEBUG:kafka.conn:<BrokerConnection node_id=1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Request 9: MetadataRequest_v1(topics=['logs'])
+DEBUG:kafka.protocol.parser:Received correlation id: 9
+DEBUG:kafka.protocol.parser:Processing response MetadataResponse_v1
+DEBUG:kafka.conn:<BrokerConnection node_id=1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Response 9 (2.730131149291992 ms): MetadataResponse_v1(brokers=[(node_id=1, host='localhost', port=9092, rack=None)], controller_id=1, topics=[(error_code=0, topic='logs', is_internal=False, partitions=[(error_code=0, partition=0, leader=1, replicas=[1], isr=[1])])])
+DEBUG:kafka.cluster:Updated cluster metadata to ClusterMetadata(brokers: 1, topics: 1, groups: 0)
+DEBUG:kafka.client:Sending metadata request MetadataRequest_v1(topics=['logs']) to node 1
+DEBUG:kafka.protocol.parser:Sending request MetadataRequest_v1(topics=['logs'])
+DEBUG:kafka.conn:<BrokerConnection node_id=1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Request 10: MetadataRequest_v1(topics=['logs'])
+DEBUG:kafka.protocol.parser:Received correlation id: 10
+DEBUG:kafka.protocol.parser:Processing response MetadataResponse_v1
+DEBUG:kafka.conn:<BrokerConnection node_id=1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Response 10 (2.718687057495117 ms): MetadataResponse_v1(brokers=[(node_id=1, host='localhost', port=9092, rack=None)], controller_id=1, topics=[(error_code=0, topic='logs', is_internal=False, partitions=[(error_code=0, partition=0, leader=1, replicas=[1], isr=[1])])])
+DEBUG:kafka.cluster:Updated cluster metadata to ClusterMetadata(brokers: 1, topics: 1, groups: 0)
+DEBUG:kafka.client:Sending metadata request MetadataRequest_v1(topics=['logs']) to node 1
+DEBUG:kafka.protocol.parser:Sending request MetadataRequest_v1(topics=['logs'])
+DEBUG:kafka.conn:<BrokerConnection node_id=1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Request 11: MetadataRequest_v1(topics=['logs'])
+DEBUG:kafka.protocol.parser:Received correlation id: 11
+DEBUG:kafka.protocol.parser:Processing response MetadataResponse_v1
+DEBUG:kafka.conn:<BrokerConnection node_id=1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Response 11 (2.3546218872070312 ms): MetadataResponse_v1(brokers=[(node_id=1, host='localhost', port=9092, rack=None)], controller_id=1, topics=[(error_code=0, topic='logs', is_internal=False, partitions=[(error_code=0, partition=0, leader=1, replicas=[1], isr=[1])])])
+DEBUG:kafka.cluster:Updated cluster metadata to ClusterMetadata(brokers: 1, topics: 1, groups: 0)
+INFO:kafka.producer.kafka:Closing the Kafka producer with 0 secs timeout.
+INFO:kafka.producer.kafka:Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+DEBUG:kafka.producer.kafka:The Kafka producer has closed.
