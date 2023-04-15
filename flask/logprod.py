@@ -1,3 +1,4 @@
+from datetime import datetime
 from flask import Flask, request, jsonify
 import logging
 from kafka import KafkaProducer
@@ -10,16 +11,28 @@ producer = KafkaProducer(bootstrap_servers='broker:9092',
 			value_serializer=lambda v: json.dumps(v).encode('utf-8'))
 
 @app.route('/', methods=['GET'])
-def hello():
+def home():
     app.logger.info('Home page viewed')
-    data = {'message': 'Selamin Aleykum Ugur.'}
+    data = {
+	'level': 'info',
+	'timestamp': datetime.utcnow().isoformat(),
+	'endpoint': '/home',
+	'ip_address': request.remote_addr,
+        'message': 'Home Page Viewed'}
     producer.send('logs', data)
-    return jsonify(data)
+    return 'Home Page'
 
 @app.route('/post', methods=['POST'])
 def create_post():
     # Code to create a new blog post
     app.logger.info('New blog post created')
+    data = {
+        'level': 'info',
+        'timestamp': datetime.utcnow().isoformat(),
+	'endpoint': '/post',
+        'ip_address': request.remote_addr,
+        'message': 'New Blog post created'}
+    producer.send('logs', data)
     return 'New blog post created'
 
 @app.route('/login', methods=['POST'])
